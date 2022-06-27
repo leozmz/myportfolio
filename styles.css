@@ -1,0 +1,180 @@
+:root {
+    --grayscale: #2e2d2d;
+    --redlike: #d14141;
+    --blueish: #3279a8;
+    --blueish2: #8fa3b0;
+}
+
+* {
+    font-family: sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: #345eeb;
+}
+
+@media (max-width: 750px) {
+    #navbar {
+        justify-content: center;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #dfe3f0;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.subtitle1 {
+    font-size: 2.0rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.subtitle2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+#welcome-section {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grayscale);
+}
+
+.color-subtitle {
+    color: var(--redlike);
+}
+
+#projects {
+    background-color: var(--blueish);
+    text-align: center;
+    padding: 20px;
+}
+
+.projects-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .projects-container {
+        flex-direction: column;
+    }
+}
+
+.project-tile {
+    background-color: var(--blueish2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.img-size {
+    width: 100%;
+    padding: 1rem;
+}
+
+.project-header-title {
+    max-width: 640px;
+    margin: 0 auto 2rem auto;
+    border-bottom: 1px solid #fff;
+    margin-top: 5rem;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    width: 100%;
+    background-color: var(--grayscale);
+    border-radius: 0 0 5px 5px;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+#contact {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grayscale);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-size {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--grayscale);
+    display: flex;
+    justify-content: flex-end;
+    border-top: 3px solid var(--redlike);
+    padding: 2rem;
+}
+
+#profile-link {
+    color: #d14141;
+}
