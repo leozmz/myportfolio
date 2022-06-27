@@ -87,13 +87,14 @@ p {
 }
 
 #projects {
+    height: 100vh;
     background-color: var(--blueish);
     text-align: center;
     padding: 20px;
 }
 
 .projects-container {
-    
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,6 +103,13 @@ p {
 @media (max-width: 750px) {
     .projects-container {
         flex-direction: column;
+    }
+
+    #projects {
+        height: fit-content;
+        background-color: var(--blueish);
+        text-align: center;
+        padding: 20px;
     }
 }
 
