@@ -73,7 +73,7 @@ p {
 }
 
 #welcome-section {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
